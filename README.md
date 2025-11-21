@@ -35,6 +35,7 @@ streamlit run app.py
    - Search the knowledge base (`data/facts.csv`) for relevant evidence.
    - Use the LLM (Gemini) to compare the claim with the evidence.
    - Display a verdict (True/False/Unverifiable) with reasoning.
+   - Store the user's results, if feedback is provided.
 
 ## Project Structure
 - `app.py`: Main Streamlit application.
@@ -42,4 +43,5 @@ streamlit run app.py
   - `extraction.py`: NLP logic for claim extraction.
   - `retrieval.py`: Vector DB and retrieval logic.
   - `llm.py`: LLM interaction logic.
+  - `utils.py`: User feedback storage
 - `data/facts.csv`: Trusted knowledge base.
